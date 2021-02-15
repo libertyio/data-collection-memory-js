@@ -20,6 +20,12 @@ class MemoryCollection {
         return true;
     }
 
+    async replace(id, content) {
+        this.storage[id] = content;
+        this.log.info(`collection ${this.name}: replace id ${id} content: ${JSON.stringify(content)}`);
+        return true;
+    }
+
     async editById(id, content) {
         const existing = this.storage[id];
         if (typeof existing === 'string' && typeof content === 'string') {
