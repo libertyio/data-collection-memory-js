@@ -1,6 +1,6 @@
 {
   "name": "@libertyio/data-collection-memory-js",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Store data collections in memory",
   "main": "dist/index.umd.js",
   "module": "src/index",
